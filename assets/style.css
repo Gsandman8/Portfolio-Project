@@ -1,31 +1,51 @@
+:root{
+    --pastelOrange:#FFA351;
+    --peach:#FFBE7B;
+    --custard:#EED971;
+    --forestGreen:#2C5F2D;
+    --moss: #97BC62;
+    --yellowGreen: #ECF87F;
+}
+
 body{
     width:100%;
-    background-color: grey;
+    background-color: var(--yellowGreen);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header {
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aquamarine;
+    background-color: var(--forestGreen);
     width: 100%;
     height:75px;
+    color:white;
 }
 h1 {
     font-size: 300%;
 }
+h2{
+    font-size: 300%;
+}
 a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 30px;
+}
+
+p{
     font-size: 20px;
+    line-height: 150%;
 }
 .header {
     width: 25%;
-    color: aquamarine;
+    color: var(--moss);
     border-right: 20px solid;
-    border-color: aquamarine;
+    border-color: var(--moss);
     padding:20px;
     margin:20px;
     background-color:white;
+    height:fit-content
 
 }
 
@@ -37,12 +57,60 @@ a {
     padding: 20px;
 }
 
+.aboutMeHeader{
+    width: 100%;
+    height:fit-content;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-right: 10px solid;
+    border-color: var(--moss);
+
+}
+
+.highlightedWork{
+    margin: 0 200px;
+    border: 10px solid;
+    border-color: var(--moss);
+    height: 300px;
+    background-image: url("../assets/Images/ReelAndMeal.png");
+    background-repeat: no-repeat;
+    background-size: 600px 300px;
+    display: flex;
+}
+
+.highlightedWorkTitle{
+    background-color: var(--moss);
+    color:white;
+    width:fit-content;
+    height:fit-content;
+    padding:10px;
+    align-items: baseline;
+}
+
+.otherWork{
+    
+    border:10px solid;
+    border-color: var(--moss);
+    width: 40%;
+    height: fit-content;
+}
+
+.otherWorkBox{
+    display: inline;
+    width: 100%;
+}
+
 #aboutMe {
     display:flex;
+    height: fit-content;
 }
 #work {
     display:flex;
+    height: fit-content;
+    
 }
 #contactMe {
     display:flex;
+    height: fit-content;
+    
 }
