@@ -27,10 +27,14 @@ h1 {
 h2{
     font-size: 300%;
 }
-a {
+.navOptions {
     text-decoration: none;
     color: white;
     font-size: 30px;
+}
+
+a{
+    text-decoration: none;
 }
 
 p{
@@ -87,17 +91,58 @@ p{
     align-items: baseline;
 }
 
+.highlightedWork:hover{
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+.highlightedWork:hover .highlightedWorkTitle{
+    color: black;
+    box-shadow: 5px 5px 5px var(--forestGreen);
+
+}
+
 .otherWork{
     
     border:10px solid;
     border-color: var(--moss);
     width: 40%;
-    height: fit-content;
+    height: 200px;
+    margin: 10px 40px;
+    justify-content: space-between;
+    background-image: url("../assets/Images/underConstruction2.jpg");
+    background-repeat: no-repeat;
+    background-size: 410px 200px;
+}
+
+.otherWork:hover{
+    box-shadow: 5px 5px 5px grey;
+    cursor: pointer;
+}
+
+.otherWork:hover .otherWorkTitle{
+    color: black;
+    box-shadow: 5px 5px 5px var(--forestGreen);
 }
 
 .otherWorkBox{
-    display: inline;
+    display: flex;
     width: 100%;
+    margin: 10px 0;
+}
+
+.otherWorkTitle{
+    background-color: var(--moss);
+    color:white;
+    width:fit-content;
+    height:fit-content;
+    padding:10px;
+    align-items: baseline;
+}
+
+.contactMeBox{
+    width: 30%;
+    margin:20px;
 }
 
 #aboutMe {
