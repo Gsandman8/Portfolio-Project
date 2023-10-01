@@ -37,6 +37,10 @@ a{
     text-decoration: none;
 }
 
+.fixLink{
+    color:var(--moss);
+}
+
 p{
     font-size: 20px;
     line-height: 150%;
@@ -59,6 +63,9 @@ p{
     height: fit-content;
     margin: 20px;
     padding: 20px;
+    border-right: 20px solid;
+    border-color: var(--moss);
+
 }
 
 .aboutMeHeader{
@@ -66,8 +73,6 @@ p{
     height:fit-content;
     margin: 10px 0;
     padding: 10px 0;
-    border-right: 10px solid;
-    border-color: var(--moss);
 
 }
 
@@ -141,8 +146,18 @@ p{
 }
 
 .contactMeBox{
-    width: 30%;
+    width: 25%;
     margin:20px;
+    display: inline-block;
+    color: var(--moss);
+}
+
+.contactMeTitle{
+    font-size: 300%;
+}
+
+.contactMeContent{
+    font-size: 125%;
 }
 
 #aboutMe {
@@ -158,4 +173,133 @@ p{
     display:flex;
     height: fit-content;
     
+}
+
+@media (max-width:1024px) {
+    .highlightedWork{
+        margin: 10px;
+        border: 10px solid;
+        border-color: var(--moss);
+        height: 300px;
+        background-image: url("../assets/Images/ReelAndMeal.png");
+        background-repeat: no-repeat;
+        background-size: 600px 300px;
+        display: flex;
+    }
+
+    .otherWork{
+    
+        border:10px solid;
+        border-color: var(--moss);
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        background-image: url("../assets/Images/underConstruction2.jpg");
+        background-repeat: no-repeat;
+        background-size: 400px 200px;
+    }
+
+    .contactMeBox{
+        width: 100%;
+        margin:20px;
+        display: inline-block;
+        color: var(--moss);
+    }
+
+    .header {
+        width: 20%;
+        color: var(--moss);
+        border-right: 20px solid;
+        border-color: var(--moss);
+        padding:20px;
+        margin:20px;
+        background-color:white;
+        height:fit-content
+    
+    }
+
+    .contentBox{
+        width: 80%;
+        background-color: white;
+        height: fit-content;
+        margin: 20px;
+        padding: 20px;
+        border-right: 20px solid;
+        border-color: var(--moss);
+
+}
+
+h1 {
+    font-size: 250%;
+}
+h2{
+    font-size: 250%;
+}
+
+}
+@media (max-width:768px) {
+    .highlightedWork{
+        margin: 10px;
+        border: 10px solid;
+        border-color: var(--moss);
+        height: 300px;
+        background-image: url("../assets/Images/ReelAndMeal.png");
+        background-repeat: no-repeat;
+        background-size: 500px 300px;
+        display: flex;
+    }
+
+    .otherWork{
+    
+        border:10px solid;
+        border-color: var(--moss);
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        background-image: url("../assets/Images/underConstruction2.jpg");
+        background-repeat: no-repeat;
+        background-size: 300px 200px;
+    }
+
+    .contactMeBox{
+        width: 100%;
+        margin:20px;
+        display: inline-block;
+        color: var(--moss);
+    }
+
+    .header {
+        width: 10%;
+        color: var(--moss);
+        border-right: 20px solid;
+        border-color: var(--moss);
+        padding:30px;
+        margin:20px;
+        background-color:white;
+        height:fit-content
+    
+    }
+
+    .contentBox{
+        width: 90%;
+        background-color: white;
+        height: fit-content;
+        margin: 20px;
+        padding: 20px;
+        border-right: 20px solid;
+        border-color: var(--moss);
+
+}
+
+h1 {
+    font-size: 150%;
+}
+h2{
+    font-size: 150%;
+}
+
+.otherWorkBox{
+    width: 100%;
+    margin: 10px 0;
+}
 }
